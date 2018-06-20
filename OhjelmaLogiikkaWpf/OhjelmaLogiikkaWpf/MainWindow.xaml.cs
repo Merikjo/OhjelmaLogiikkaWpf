@@ -129,5 +129,11 @@ namespace OhjelmaLogiikkaWpf
             b = (sbyte)(b + 1);
             MessageBox.Show("B:n arvo = " + b);
         }
+
+        private void btnTervehdys_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Heissan," + txtName.Text + "!");
+            txtHei.Text = "Hyvä!!!!";
+        }
     }
 }

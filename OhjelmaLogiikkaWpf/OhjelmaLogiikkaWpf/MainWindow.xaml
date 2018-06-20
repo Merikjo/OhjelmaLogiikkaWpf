@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OhjelmaLogiikkaWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
         <Button x:Name="btnViikonpaiva" Content="Viikonpäivä" HorizontalAlignment="Left" Height="91" Margin="51,49,0,0" VerticalAlignment="Top" Width="246" Click="btnViikonpaiva_Click"/>
         <Button x:Name="btnVertailu" Content="Ovat samoja?" HorizontalAlignment="Left" Height="91" Margin="352,49,0,0" VerticalAlignment="Top" Width="274" Click="btnVertailu_Click"/>
@@ -13,6 +13,10 @@
         <Button x:Name="btnLoop" Content="Silmukka" HorizontalAlignment="Left" Height="86" Margin="352,173,0,0" VerticalAlignment="Top" Width="274" Click="btnLoop_Click"/>
         <Button x:Name="btnLuku" Content="Luku + 1" HorizontalAlignment="Left" Height="87" Margin="51,298,0,0" VerticalAlignment="Top" Width="246" Click="btnLuku_Click"/>
         <TextBox x:Name="txtLuku" HorizontalAlignment="Left" Height="87" Margin="352,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274"/>
+        <Button x:Name="btnTervehdys" Content="Tervehdys" HorizontalAlignment="Left" Height="62" Margin="51,540,0,0" VerticalAlignment="Top" Width="246" Click="btnTervehdys_Click"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="47" Margin="51,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
+        <Label x:Name="lblName" Content="Kirjoita tähän nimesi:" HorizontalAlignment="Left" Height="24" Margin="51,459,0,0" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="txtHei" HorizontalAlignment="Left" Height="34" Margin="51,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
 
     </Grid>
 </Window>
