@@ -23,6 +23,7 @@ namespace OhjelmaLogiikkaWpf
         public MainWindow()
         {
             InitializeComponent();
+            myBrowser.Navigate(new Uri("http://www.google.com"));
         }
 
         private void btnViikonpaiva_Click(object sender, RoutedEventArgs e)
@@ -134,6 +135,35 @@ namespace OhjelmaLogiikkaWpf
         {
             MessageBox.Show("Heissan," + txtName.Text + "!");
             txtHei.Text = "Hyvä!!!!";
+        }
+
+        private void btnHelloWorld_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hei, maailma!");
+            MessageBox.Show("Hello World!");
+        }
+
+        private void btnDoWhile_Click(object sender, RoutedEventArgs e)
+        {
+            string s = "A";
+            // for-silmukka (engl. for loop)
+            for (int i = 0; i < 1000; i++)
+            {
+                s = s + "A";
+            }
+            MessageBox.Show(s);
+
+            // do-while -silmukka
+            do
+            {
+                MessageBox.Show("Hiphei!");
+            }
+            while (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday);
+        }
+
+        private void btnDefaultSite_Click(object sender, RoutedEventArgs e)
+        {
+            myBrowser.Navigate(new Uri("http://www.google.com"));
         }
     }
 }
